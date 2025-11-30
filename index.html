@@ -88,4 +88,40 @@
     }
 </style>
 </head>
-<b
+<body>
+
+<div class="container">
+    <h1>Fariha 💖</h1>
+    <p>
+        Every moment with you feels like a beautiful dream that I never want to wake up from.
+        Your smile is my sunshine, your voice is my peace, and your presence is my favorite blessing.
+        <br><br>
+        I love you more than words can ever express, and every day my heart chooses you again. 💗
+    </p>
+
+    <button onclick="showMessage()" class="love-btn">
+        Click Here, My Love 💕
+    </button>
+</div>
+
+<script>
+    // Floating hearts generator
+    setInterval(() => {
+        let heart = document.createElement("div");
+        heart.className = "heart";
+        heart.innerHTML = "❤️";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.fontSize = (20 + Math.random()*30) + "px";
+        document.body.appendChild(heart);
+
+        setTimeout(() => heart.remove(), 6000);
+    }, 500);
+
+    // Button message popup
+    function showMessage() {
+        alert("Fariha, you are the most beautiful part of my life. I love you endlessly 💖");
+    }
+</script>
+
+</body>
+</html>
